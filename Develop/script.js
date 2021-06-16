@@ -42,7 +42,19 @@ while (!lowerLetters && !upperLetters && !number && !specialChar) {
   specialChar = confirm ("Would you like to use special characters in your password?");
 }
 
-
+// push selected characters from their array into a blank array
+if (lowerLetters === true) {
+  possibleCharacters = possibleCharacters.concat(smallLetters); 
+}
+if (upperLetters === true) {
+  possibleCharacters = possibleCharacters.concat(bigLetters); 
+}
+if (num === true) {
+  possibleCharacters = possibleCharacters.concat(characters); 
+}
+if (specialChar === true) {
+  possibleCharacters = possibleCharacters.concat(numbers); 
+}
 
 
 
